@@ -1,10 +1,14 @@
 import "./App.css";
+/* import { ThemeProvider } from "styled-components";
+import { dark, light, GlobalStyle } from "./styles/theme/uiTheme"; */
+import GithubProfile from "./components/Home/GithubProfile";
 
 function App() {
   return (
-    <div className="App">
-      <p>Hello Vite + React!</p>
-    </div>
+    <>
+      {/*  <GlobalStyle /> */}
+      <GithubProfile />
+    </>
   );
 }
 
