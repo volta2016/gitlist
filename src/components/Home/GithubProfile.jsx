@@ -1,8 +1,14 @@
-import React from "react";
+import Aside from "../Aside";
+import RepositoryList from "../RepositoryList";
 import Layout from "../layout";
 
 const GithubProfile = () => {
-  return <Layout>main</Layout>;
+  return (
+    <Layout>
+      <Aside />
+      <RepositoryList />
+    </Layout>
+  );
 };
 
 export default GithubProfile;
