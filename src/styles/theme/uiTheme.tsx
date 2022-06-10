@@ -4,27 +4,29 @@ export const dark: DefaultTheme = {
   color: {
     bg: "#0d1117",
     link: "#57a6ff",
-    textRepoAndBorder: "#8B949E", //grey
-    textRepoTwoAndBorder: "#c5ced7", //grey2
+    textMain: "#8B949E", //grey
+    textProfile: "#c5ced7", //grey2
     textHeader: "#c9d1d9",
     white: "#c9d1d9",
+    border: "rgb(238 245 252 / 10%)",
     button: "#22262C",
-    header: "hsl(215deg 21% 11%)",
-    badge: "#15223A",
+    header: "#161b22",
+    badge: "rgb(58 139 253 / 15%)",
   },
 };
 
 export const light = {
   color: {
-    bg: "#0d1117",
+    bg: "rgb(255 255 255)",
     link: "#57a6ff",
-    textRepoAndBorder: "#8B949E",
-    textRepoTwoAndBorder: "#c5ced7", //grey2
-    textHeader: "#c9d1d9",
-    white: "#FFFFFE",
-    button: "#22262C",
-    header: "hsl(213deg 13% 16%",
-    badge: "hsl(215deg 98% 61% / 15%)", //tags technology
+    textRepoAndBorder: "#23282e",
+    textRepoProfileAndBorder: "#23282e", //grey2
+    textHeader: "#ffffff",
+    white: "#22262C",
+    border: "rgb(47 53 60)",
+    button: "#e6ebef",
+    header: "#23282e",
+    badge: "rgb(224 247 255)", //tags technology
   },
 };
 
@@ -38,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body{
     background-color: ${({ theme }) => theme.color.bg};
-    color:${({ theme }) => theme.color.textRepoAndBorder};
+    color:${({ theme }) => theme.color.textMain};
    
   }
   button{
@@ -51,4 +53,12 @@ export const GlobalStyle = createGlobalStyle`
   input{
     border: none;
   }
+
+  aside {
+    flex: 1 1 0%;
+  }
+  section {
+    flex: 3 1 0%;
+  }
+ 
 `;

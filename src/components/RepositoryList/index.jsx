@@ -1,7 +1,12 @@
 import React from "react";
+import Filters from "../Search/Filters";
 
 const RepositoryList = () => {
-  return <div>RepositoryList</div>;
+  return (
+    <section>
+      <Filters />
+    </section>
+  );
 };
 
 export default RepositoryList;

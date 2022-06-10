@@ -1,10 +1,10 @@
 import React from "react";
 import Footer from "../Footer";
-import Header from "../Header";
+import { Container } from "../../styles/theme/CommonComponents";
 
 const Layout = ({ children }) => (
   <>
-    {children}
+    <Container>{children}</Container>
     <Footer />
   </>
 );

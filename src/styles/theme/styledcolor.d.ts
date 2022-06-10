@@ -7,10 +7,11 @@ declare module 'styled-components' {
     color: {
       bg: string;
       link: string;
-      textRepoAndBorder: string;
-      textRepoTwoAndBorder: string;
+      textMain: string;
+      textProfile: string;
       textHeader: string;
       white: string;
+      border: string,
       button: string;
       header: string;
       badge: string;
