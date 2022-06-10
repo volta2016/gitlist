@@ -3,9 +3,9 @@ import Filters from "../Search/Filters";
 
 const RepositoryList = () => {
   return (
-    <div>
+    <section>
       <Filters />
-    </div>
+    </section>
   );
 };
 

@@ -53,4 +53,12 @@ export const GlobalStyle = createGlobalStyle`
   input{
     border: none;
   }
+
+  aside {
+    flex: 1 1 0%;
+  }
+  section {
+    flex: 3 1 0%;
+  }
+ 
 `;
