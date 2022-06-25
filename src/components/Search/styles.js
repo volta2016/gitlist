@@ -5,7 +5,7 @@ export const FilterStyled = styled.div`
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 0;
-  border: 1px solid ${({ theme }) => theme.color.border};
+  border-bottom: 1px solid ${({ theme }) => theme.color.border};
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
@@ -31,4 +31,12 @@ export const SearchInput = styled.input`
 export const SelectList = styled.div`
   display: flex;
   gap: 0.5rem;
+`;
+
+export const Selector = styled.select`
+  background: ${({ theme }) => theme.color.button};
+  color: ${({ theme }) => theme.color.white};
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 1rem;
 `;

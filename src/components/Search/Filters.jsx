@@ -1,21 +1,12 @@
 import React from "react";
-import { FilterStyled, SearchInput, SelectList } from "./styles";
+import { FilterStyled, SearchInput } from "./styles";
+import Select from "./Select";
 
 const Filters = () => {
   return (
     <FilterStyled>
       <SearchInput placeholder="Find a Repository" />
-      <SelectList>
-        <select name="" id="select">
-          <option value=""></option>
-        </select>
-        <select name="" id="select">
-          <option value=""></option>
-        </select>
-        <select name="" id="select">
-          <option value=""></option>
-        </select>
-      </SelectList>
+      <Select></Select>
     </FilterStyled>
   );
 };
